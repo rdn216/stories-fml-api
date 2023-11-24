@@ -8,9 +8,10 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 stories = [
-  { name:'Mo', text: 'Hello World' },
-  { name:'Fabien', text: 'Hello Python' },
-  { name:'Brian', text: 'Hello JS' },
-  { name:'Forrest', text: 'Hello Rails' }
+  { title:'Mo', body: 'Hello World' },
+  { title:'Fabien', body: 'Hello Python' },
+  { title:'Brian', body: 'Hello JS' },
+  { title:'Forrest', body: 'Hello Rails' }
 ]
 Story.create(stories)
+puts 'created'

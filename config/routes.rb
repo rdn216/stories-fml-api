@@ -9,9 +9,11 @@ Rails.application.routes.draw do
   # root "posts#index"
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
-      resources :stories, only: [ :index ]
+      resources :stories, only: [ :index, :show, :update, :destroy, :create ]
     end
   end
+
 end
-end
+
+
 # config/routes.rb
